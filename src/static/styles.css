@@ -86,14 +86,34 @@ section h3 {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
   color: #555;
 }
 
 .participants-list li {
-  padding: 3px 0;
+  padding: 5px 0;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-email {
+  flex-grow: 1;
+}
+
+.delete-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  font-size: 14px;
+}
+
+.delete-icon:hover {
+  opacity: 1;
 }
 
 .no-participants {
